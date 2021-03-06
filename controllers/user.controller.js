@@ -31,8 +31,10 @@ const usuariosPut = (req, res = response) => {
 }
 
 const usuariosDelete = (req, res = response) => {
+  const { id } = req.params
   res.json({
     msg: 'delete API - Controlador',
+    id,
   })
 }
 
